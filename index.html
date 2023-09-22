@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;  
+        }
+        h3#header[class *= "title"] {
+            background-color: red;
+        }
+        h3#header[class ^= "bar"] {
+            text-decoration: underline;
+        }
+        article p.text[data-intro="information"] {
+            border: 2px dotted green;
+        }
+        p[class ~= "foo"] {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h3 id="header" class="bar title">Article title</h3>
+            <p>Author: <span class="author">Alexandra</span></p>
+        </header>
+        <p class="text" data-intro="information">Paragraph #1</p>
+        <p class="text foo">Paragraph #2</p>
+        <p class="text" data-ending>Paragraph #3</p>
+    </article>
+</body>
+</html>
